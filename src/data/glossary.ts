@@ -1,4 +1,5 @@
 import type { GlossaryTerm } from './types'
+import { cemap1Unit2Glossary } from './cemap1Unit2Remaining'
 
 let n = 0
 function term(t: string, def: string, module: ('cemap1'|'cemap2'|'cemap3')[]): GlossaryTerm {
@@ -6,7 +7,7 @@ function term(t: string, def: string, module: ('cemap1'|'cemap2'|'cemap3')[]): G
   return { id: `gl-${n}`, term: t, definition: def, module }
 }
 
-export const glossary: GlossaryTerm[] = [
+const baseGlossary: GlossaryTerm[] = [
   term('Maturity transformation', 'Using short-term deposits to fund longer-term lending (e.g. instant-access savings funding a 25-year mortgage).', ['cemap1']),
   term('Aggregation', 'Combining many small deposits into a smaller number of larger loans, without necessarily changing the term/maturity.', ['cemap1']),
   term('Fiscal policy', 'Government decisions on taxation and public spending, used to influence the economy.', ['cemap1']),
@@ -46,3 +47,5 @@ export const glossary: GlossaryTerm[] = [
   term('Insistent customer', 'A customer who receives advice but chooses to proceed in a different way from the adviser’s recommendation.', ['cemap1']),
   term('Appropriateness test', 'An assessment of whether a customer has enough knowledge and experience to understand the risks of specified complex non-advised investments.', ['cemap1'])
 ]
+
+export const glossary: GlossaryTerm[] = [...baseGlossary, ...cemap1Unit2Glossary]

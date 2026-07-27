@@ -33,10 +33,10 @@ export const curriculum: Unit[] = [
     title: 'Unit 2 — Advisers, Clients and Ethics (FRE2)',
     topics: [
       { module: 'cemap1', unitKey: 'unit2', topicKey: 't1', title: 'Advice Process & Adviser Skills', status: 'complete', sourcePdf: 'CeMAP 1', sourcePages: 'p.149-162' },
-      { module: 'cemap1', unitKey: 'unit2', topicKey: 't2a', title: 'Consumer Rights & Ethical Outcomes', status: 'pending', sourcePdf: 'CeMAP 1', sourcePages: 'p.158-165' },
-      { module: 'cemap1', unitKey: 'unit2', topicKey: 't2b', title: 'Money Laundering, Data & Complaints', status: 'pending', sourcePdf: 'CeMAP 1', sourcePages: 'p.166-178' },
-      { module: 'cemap1', unitKey: 'unit2', topicKey: 't3', title: 'Regulatory Advice Framework', status: 'pending', sourcePdf: 'CeMAP 1', sourcePages: 'p.179-191' },
-      { module: 'cemap1', unitKey: 'unit2', topicKey: 't4', title: 'Ethical Principles', status: 'pending', sourcePdf: 'CeMAP 1', sourcePages: 'p.192-202' }
+      { module: 'cemap1', unitKey: 'unit2', topicKey: 't2a', title: 'Consumer Rights & Ethical Outcomes', status: 'complete', sourcePdf: 'CeMAP 1', sourcePages: 'p.163-170' },
+      { module: 'cemap1', unitKey: 'unit2', topicKey: 't2b', title: 'Money Laundering, Data & Complaints', status: 'complete', sourcePdf: 'CeMAP 1', sourcePages: 'p.171-183' },
+      { module: 'cemap1', unitKey: 'unit2', topicKey: 't3', title: 'Regulatory Advice Framework', status: 'complete', sourcePdf: 'CeMAP 1', sourcePages: 'p.184-196' },
+      { module: 'cemap1', unitKey: 'unit2', topicKey: 't4', title: 'Ethical Principles', status: 'complete', sourcePdf: 'CeMAP 1', sourcePages: 'p.197-207' }
     ]
   },
   // ---------------- CeMAP 2 ----------------

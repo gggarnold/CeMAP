@@ -1,4 +1,5 @@
 import type { Flashcard } from './types'
+import { cemap1Unit2Flashcards } from './cemap1Unit2Remaining'
 
 let n = 0
 function fc(module: 'cemap1'|'cemap2'|'cemap3', unitKey: string, topicKey: string, category: string, front: string, back: string, source: string): Flashcard {
@@ -6,7 +7,7 @@ function fc(module: 'cemap1'|'cemap2'|'cemap3', unitKey: string, topicKey: strin
   return { id: `fc-${n}`, module, unitKey, topicKey, category, front, back, source }
 }
 
-export const flashcards: Flashcard[] = [
+const baseFlashcards: Flashcard[] = [
   // CeMAP 1 Unit 1 Topic 1
   fc('cemap1','unit1','t1','Definitions','What are the two core functions of money?', 'A unit of account and a medium of exchange.', 'CeMAP 1, Unit 1 Topic 1'),
   fc('cemap1','unit1','t1','Definitions','Name the 4 main asset classes.', 'Cash, fixed interest securities & money market instruments, and equities (with property often added as a fourth in practice).', 'CeMAP 1, Unit 1 Topic 1'),
@@ -142,3 +143,5 @@ export const flashcards: Flashcard[] = [
   fc('cemap1','unit2','t1','Adviser skills','What are closed, open, probing and hypothetical questions used for?', 'Closed questions obtain facts; open questions invite explanation; probing questions explore an answer; hypothetical questions help the customer imagine a future situation.', 'CeMAP 1, Unit 2 Topic 1, p.156-157'),
   fc('cemap1','unit2','t1','Adviser skills','Why should an adviser summarise during a meeting?', 'To demonstrate listening, check understanding and allow the customer to correct a misunderstanding.', 'CeMAP 1, Unit 2 Topic 1, p.157')
 ]
+
+export const flashcards: Flashcard[] = [...baseFlashcards, ...cemap1Unit2Flashcards]

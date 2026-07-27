@@ -1,7 +1,7 @@
 # CeMAP Revision Content Coverage
 
 Audit date: 27 July 2026  
-Status: Development in progress; CeMAP 1 Unit 2 Topic 1 completed.
+Status: Development in progress; all CeMAP 1 instructional topics completed.
 
 ## Coverage method
 
@@ -9,9 +9,9 @@ Percentages count useful instructional topics and supplied specimen/case-study p
 
 | Source PDF | Complete | Partial | Missing | Coverage |
 |---|---:|---:|---:|---:|
-| CeMAP 1 Delegate 2026 | 14 of 23 sections | 0 | 9 | 60.9% |
+| CeMAP 1 Delegate 2026 | 18 of 23 sections | 0 | 5 | 78.3% |
 | CeMAP 2-3 Delegate 2026 | 3 of 25 sections | 0 | 22 | 12.0% |
-| **Combined** | **17 of 48 sections** | **0** | **31** | **35.4%** |
+| **Combined** | **21 of 48 sections** | **0** | **27** | **43.8%** |
 
 These percentages measure section availability, not how many words were copied. Educational content must be rewritten into original revision wording.
 
@@ -35,10 +35,10 @@ These percentages measure section availability, not how many words were copied. 
 ### Unit 2 - Advisers, Clients and Ethics
 
 - ✅ Topic 1: Advice process and adviser skills (lesson pp. 149-157; test pp. 158-162)
-- ❌ Topic 2 Part 1: Consumer rights and ethical outcomes (pp. 163-170)
-- ❌ Topic 2 Part 2: Money laundering, data and complaints (pp. 171-183)
-- ❌ Topic 3: Regulatory advice framework (pp. 184-196)
-- ❌ Topic 4: Ethical principles (pp. 197-207)
+- ✅ Topic 2 Part 1: Consumer rights and ethical outcomes (pp. 163-170)
+- ✅ Topic 2 Part 2: Money laundering, data and complaints (pp. 171-183)
+- ✅ Topic 3: Regulatory advice framework (pp. 184-196)
+- ✅ Topic 4: Ethical principles (pp. 197-207)
 
 ### Supplied specimen papers
 
@@ -96,14 +96,14 @@ The PDF contents page is internally inconsistent. For example, it lists Unit 2 T
 
 | Content type | Existing | Audit status |
 |---|---:|---|
-| Curriculum topics | 37 | 15 complete, 22 pending |
-| Lessons | 15 | All correspond to complete topics |
-| Flashcards | 104 | Only complete-topic coverage |
-| Glossary terms | 38 | Relationships incomplete |
+| Curriculum topics | 37 | 19 complete, 18 pending |
+| Lessons | 19 | All correspond to complete topics |
+| Flashcards | 128 | Only complete-topic coverage |
+| Glossary terms | 59 | Relationships incomplete |
 | Calculation tools | 4 | More PDF calculations remain |
-| Topic/case questions | 233 | Only complete-topic coverage |
+| Topic/case questions | 249 | Only complete-topic coverage |
 | Specimen-paper questions | 40 | Unit 1 Specimen A only |
-| Total questions | 273 | New Topic 1 questions include option explanations; legacy questions still need them |
+| Total questions | 289 | New Unit 2 questions include option explanations; legacy questions still need them |
 | Mock exam entries | 2 | Five CeMAP 1 papers and six CeMAP 3 cases missing |
 
 ## Completion gate

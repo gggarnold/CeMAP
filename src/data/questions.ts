@@ -1,4 +1,5 @@
 import type { Question } from './types'
+import { cemap1Unit2Questions } from './cemap1Unit2Remaining'
 
 // Every question below is adapted from a "Topic Test" or "Case Study" question bank supplied
 // in the PDFs, with the correct answer cross-checked against that PDF's own answer key
@@ -7,7 +8,7 @@ import type { Question } from './types'
 // generated) per your instruction to keep the two clearly separable.
 // Option order below matches the source; correctIndex is 0-based into `options`.
 
-export const questions: Question[] = [
+const baseQuestions: Question[] = [
   // ================= CeMAP 1, Unit 1, Topic 1 (18 Qs) =================
   q('c1-u1-t1-q1', 'cemap1','unit1','t1','Financial intermediaries can provide maturity transformation because they:',
     ['Offer a wide range of deposit accounts to a wide range of depositors','Aggregate many small deposits from a large number of clients','Provide services to clients from many different geographical locations','Reduce the risk of default or fraud by lending to a wide variety of borrowers'],0,
@@ -757,6 +758,8 @@ export const questions: Question[] = [
     'For a life policy, the source says the report is normally supplied before the contract is concluded, subject to the stated limited exceptions.',
     ['Correct: before conclusion is the normal timing.','Waiting until after cancellation is not the stated rule.','No five-day rule is stated.','The 14-day timing tested here relates to a pension plan.'],'p.155')
 ]
+
+export const questions: Question[] = [...baseQuestions, ...cemap1Unit2Questions]
 
 function q(
   id: string, module: 'cemap1'|'cemap2'|'cemap3', unitKey: string, topicKey: string,

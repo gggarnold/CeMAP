@@ -1,10 +1,11 @@
 import type { Lesson } from './types'
+import { cemap1Unit2Lessons } from './cemap1Unit2Remaining'
 
 // All lessons below are original revision text written from the concepts in the supplied
 // PDFs — not copied passages. Each cites the source topic/page range it was derived from.
 // Figures that change year-to-year (tax rates, allowances) are flagged dateSensitive: true.
 
-export const lessons: Lesson[] = [
+const baseLessons: Lesson[] = [
   // ---------------------------------------------------------------
   {
     id: 'c1-u1-t1',
@@ -1248,3 +1249,5 @@ export const lessons: Lesson[] = [
     dateSensitive: true
   }
 ]
+
+export const lessons: Lesson[] = [...baseLessons, ...cemap1Unit2Lessons]
