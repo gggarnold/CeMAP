@@ -1,6 +1,8 @@
 import type { MockExamMeta } from './types'
 import { specimenPaperA } from './specimenPaperA'
 import { questions } from './questions'
+import { cemap3PdfMocks } from './cemap3PdfCases'
+import { cemap1RemainingSpecimenMocks } from './cemap1RemainingSpecimens'
 
 function questionIds(module: 'cemap1'|'cemap2'|'cemap3', unitKey: string, count: number, offset = 0) {
   const pool = module === 'cemap3'
@@ -10,7 +12,7 @@ function questionIds(module: 'cemap1'|'cemap2'|'cemap3', unitKey: string, count:
   return Array.from({ length: Math.min(count, pool.length) }, (_, index) => pool[(index + offset) % pool.length].id)
 }
 
-export const mockExams: MockExamMeta[] = [
+const baseMockExams: MockExamMeta[] = [
   {
     id: 'c1-u1-specimen-a',
     module: 'cemap1',
@@ -64,3 +66,5 @@ export const mockExams: MockExamMeta[] = [
     source: 'Generated only from CeMAP 3 protection and case-study material in the supplied PDF.'
   }
 ]
+
+export const mockExams: MockExamMeta[] = [...baseMockExams, ...cemap1RemainingSpecimenMocks, ...cemap3PdfMocks]

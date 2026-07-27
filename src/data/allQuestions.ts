@@ -1,8 +1,9 @@
 import { questions } from './questions'
 import { specimenPaperA } from './specimenPaperA'
+import { cemap1RemainingSpecimenQuestions } from './cemap1RemainingSpecimens'
 import type { Question } from './types'
 
-export const allQuestions: Question[] = [...questions, ...specimenPaperA].map(question => ({
+export const allQuestions: Question[] = [...questions, ...specimenPaperA, ...cemap1RemainingSpecimenQuestions].map(question => ({
   ...question,
   incorrectExplanations: question.incorrectExplanations?.length === question.options.length
     ? question.incorrectExplanations

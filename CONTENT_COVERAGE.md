@@ -1,7 +1,7 @@
 # CeMAP Revision Content Coverage
 
 Audit date: 27 July 2026  
-Status: Development in progress; all curriculum lessons are now available.
+Status: Exact supplied-question parity achieved. Concept-by-concept lesson, flashcard, glossary and calculation reconciliation remains in progress, so overall content coverage is not yet being represented as 100%.
 
 ## Coverage method
 
@@ -10,8 +10,8 @@ Percentages count useful instructional topics and supplied specimen/case-study p
 | Source PDF | Complete | Partial | Missing | Coverage |
 |---|---:|---:|---:|---:|
 | CeMAP 1 Delegate 2026 | 18 of 23 sections | 0 | 5 | 78.3% |
-| CeMAP 2-3 Delegate 2026 | 19 of 25 sections | 0 | 6 | 76.0% |
-| **Combined** | **37 of 48 sections** | **0** | **11** | **77.1%** |
+| CeMAP 2-3 Delegate 2026 | 3 of 25 sections | 16 | 6 | 12.0% |
+| **Combined** | **21 of 48 sections** | **16** | **11** | **43.8%** |
 
 These percentages measure section availability, not how many words were copied. Educational content must be rewritten into original revision wording.
 
@@ -57,26 +57,26 @@ The PDF contents page is internally inconsistent. For example, it lists Unit 2 T
 
 ### CeMAP 2 Unit 1 - Mortgage Law, Practice and Application
 
-- ✅ Topic 1: Property and mortgage markets (pp. 7-14)
-- ✅ Topics 2 and 3: Mortgage regulation and types of borrower (pp. 15-31)
-- ✅ Topic 4: Principles of mortgage and property law (pp. 32-41)
-- ✅ Topic 5: Property and mortgage law (pp. 42-50)
-- ✅ Topic 6: Buying a property overview (pp. 51-61)
-- ✅ Topics 7 and 8: Legal purchase process and regulation (pp. 62-77)
-- ✅ Topics 9 and 10: Adviser role and applicant financial assessment (pp. 78-91)
-- ✅ Topics 11 and 12: Credit status and suitability (pp. 92-104)
-- ✅ Topics 13 and 14: Property assessment, valuations and surveys (pp. 105-120)
-- ✅ Topic 15: Other lending-decision factors (pp. 121-134)
+- 🟡 Topic 1: Property and mortgage markets (pp. 7-14) - lesson present; exact topic-test parity pending
+- 🟡 Topics 2 and 3: Mortgage regulation and types of borrower (pp. 15-31) - lesson present; exact topic-test parity pending
+- 🟡 Topic 4: Principles of mortgage and property law (pp. 32-41) - lesson present; exact topic-test parity pending
+- 🟡 Topic 5: Property and mortgage law (pp. 42-50) - lesson present; exact topic-test parity pending
+- 🟡 Topic 6: Buying a property overview (pp. 51-61) - lesson present; exact topic-test parity pending
+- 🟡 Topics 7 and 8: Legal purchase process and regulation (pp. 62-77) - lesson present; exact topic-test parity pending
+- 🟡 Topics 9 and 10: Adviser role and applicant financial assessment (pp. 78-91) - lesson present; exact topic-test parity pending
+- 🟡 Topics 11 and 12: Credit status and suitability (pp. 92-104) - lesson present; exact topic-test parity pending
+- 🟡 Topics 13 and 14: Property assessment, valuations and surveys (pp. 105-120) - lesson present; exact topic-test parity pending
+- 🟡 Topic 15: Other lending-decision factors (pp. 121-134) - lesson present; exact topic-test parity pending
 
 ### CeMAP 2 Unit 2 - Mortgage Products and Post Completion
 
 - ✅ Topic 1: Mortgage repayment methods (pp. 135-144)
-- ✅ Topic 2: Interest-only repayment vehicles (pp. 145-158)
-- ✅ Topic 3: Interest-rate options (pp. 159-168)
-- ✅ Topics 4 and 5: Mortgage products and schemes (pp. 169-182)
-- ✅ Topic 6: Raising additional funds (pp. 183-196)
-- ✅ Topic 7: Transferring mortgages (pp. 197-208)
-- ✅ Topics 8 and 9: Arrears, lender rights and remedies (pp. 209-223)
+- 🟡 Topic 2: Interest-only repayment vehicles (pp. 145-158) - lesson present; exact topic-test parity pending
+- 🟡 Topic 3: Interest-rate options (pp. 159-168) - lesson present; exact topic-test parity pending
+- 🟡 Topics 4 and 5: Mortgage products and schemes (pp. 169-182) - lesson present; exact topic-test parity pending
+- 🟡 Topic 6: Raising additional funds (pp. 183-196) - lesson present; exact topic-test parity pending
+- 🟡 Topic 7: Transferring mortgages (pp. 197-208) - lesson present; exact topic-test parity pending
+- 🟡 Topics 8 and 9: Arrears, lender rights and remedies (pp. 209-223) - lesson present; exact topic-test parity pending
 
 ### CeMAP 3
 
@@ -101,11 +101,56 @@ The PDF contents page is internally inconsistent. For example, it lists Unit 2 T
 | Flashcards | 179 | Every curriculum topic has flashcards |
 | Glossary terms | 110 | New CeMAP 2 terms include lesson relationships |
 | Calculation tools | 4 | More PDF calculations remain |
-| Topic/case questions | 368 | Every curriculum topic has practice questions |
+| Topic/case questions | 410 | Exact CeMAP 1 topic-test parity achieved; CeMAP 2 reconciliation in progress |
 | Specimen-paper questions | 40 | Unit 1 Specimen A only |
-| Total questions | 408 | New questions include option explanations; legacy questions still need them |
+| Total questions | 450 | Includes 40 questions from CeMAP 1 Unit 1 Specimen A |
 | Mock exam entries | 7 | Original supplied-paper imports remain incomplete |
 
 ## Completion gate
 
 Coverage remains below 100%. No PDF section should be marked complete merely because its title exists in the curriculum. Completion requires original revision wording, adequate flashcards and questions, definitions, calculations where applicable, verified answers, useful cross-links, working UI and successful QA.
+
+## Question-count reconciliation
+
+### CeMAP 1 Unit 2
+
+| Topic test | PDF questions | App PDF-adapted questions | Status |
+|---|---:|---:|---|
+| Topic 1 - Advice process and adviser skills | 20 | 20 | ✅ |
+| Topic 2 Part 1 - Consumer rights and ethical outcomes | 11 | 11 | ✅ |
+| Topic 2 Part 2 - Money laundering, data and complaints | 14 | 14 | ✅ |
+| Topic 3 - Regulatory advice framework | 18 | 18 | ✅ |
+| Topic 4 - Ethical principles | 15 | 15 | ✅ |
+| **Unit 2 total** | **78** | **78** | **✅ exact parity** |
+
+### CeMAP 1 supplied specimen papers
+
+| Paper | PDF questions | App PDF-adapted questions | Status |
+|---|---:|---:|---|
+| Unit 1 Specimen A | 40 | 40 | ✅ |
+| Unit 1 Specimen B | 40 | 40 | ✅ |
+| Unit 1 Specimen C | 40 | 40 | ✅ |
+| Unit 2 Specimen A | 40 | 40 | ✅ |
+| Unit 2 Specimen B | 40 | 40 | ✅ |
+| Unit 2 Specimen C | 40 | 40 | ✅ |
+| **Specimen total** | **240** | **240** | **✅ exact parity** |
+
+### CeMAP 2 topic tests
+
+| Scope | PDF questions | App PDF-adapted questions | Status |
+|---|---:|---:|---|
+| Unit 1 topic tests | 157 | 157 | ✅ |
+| Unit 2 topic tests | 104 | 104 | ✅ |
+| **CeMAP 2 topic-test total** | **261** | **261** | **✅ exact parity** |
+
+### CeMAP 3 supplied case studies
+
+| Scope | PDF questions | App PDF-adapted questions | Status |
+|---|---:|---:|---|
+| Case Study 1 | 10 | 10 | ✅ |
+| Case Studies 2-7 | 60 | 60 | ✅ |
+| **Case-study total** | **70** | **70** | **✅ exact parity** |
+
+### Supplied assessment grand total
+
+The app now contains an adapted, page-referenced, answer-key-mapped record for every supplied topic-test, specimen-paper and case-study question in both PDFs. This is a separate completion gate from concept-level lesson/flashcard/glossary/calculation coverage.

@@ -1,6 +1,7 @@
 import type { Question } from './types'
-import { cemap1Unit2Questions } from './cemap1Unit2Remaining'
-import { cemap2RemainingQuestions } from './cemap2Remaining'
+import { cemap1Unit2PdfQuestions } from './cemap1Unit2PdfQuestions'
+import { cemap2PdfQuestions } from './cemap2PdfQuestions'
+import { cemap3PdfQuestions } from './cemap3PdfCases'
 
 // Every question below is adapted from a "Topic Test" or "Case Study" question bank supplied
 // in the PDFs, with the correct answer cross-checked against that PDF's own answer key
@@ -760,7 +761,7 @@ const baseQuestions: Question[] = [
     ['Correct: before conclusion is the normal timing.','Waiting until after cancellation is not the stated rule.','No five-day rule is stated.','The 14-day timing tested here relates to a pension plan.'],'p.155')
 ]
 
-export const questions: Question[] = [...baseQuestions, ...cemap1Unit2Questions, ...cemap2RemainingQuestions]
+export const questions: Question[] = [...baseQuestions, ...cemap1Unit2PdfQuestions, ...cemap2PdfQuestions, ...cemap3PdfQuestions]
 
 function q(
   id: string, module: 'cemap1'|'cemap2'|'cemap3', unitKey: string, topicKey: string,
