@@ -28,7 +28,7 @@ export default function LessonView() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [module, unit, topic])
 
-  if (!current) return <div className="page"><TopBar title="Not found" back /></div>
+  if (!current || !lesson) return <div className="page"><TopBar title="Lesson not found" back /></div>
 
   async function toggleComplete() {
     if (!lesson) return
@@ -46,19 +46,7 @@ export default function LessonView() {
     <div className="page">
       <TopBar title={current.title} back />
 
-      {!lesson && (
-        <div className="card" style={{ marginTop: 16 }}>
-          <div className="pill pill-pending" style={{ marginBottom: 10 }}>Content not yet authored</div>
-          <p style={{ color: 'var(--text-dim)', fontSize: '0.9rem' }}>
-            This topic hasn\u2019t had its lesson, flashcards or questions written yet. It exists in your source
-            material at <strong>{current.sourcePdf}, {current.sourcePages}</strong> and is queued to be added in a
-            future content pass — see the Coverage report on the dashboard for the full list.
-          </p>
-        </div>
-      )}
-
-      {lesson && (
-        <>
+      <>
           {lesson.dateSensitive && (
             <div className="datesensitive-banner">
               ⚠️ Contains rates/allowances that change each Budget. Check that this information remains current for your exam sitting.
@@ -129,8 +117,7 @@ export default function LessonView() {
           <button className="btn btn-primary" onClick={toggleComplete} style={{ marginTop: 8 }}>
             {completed ? '✓ Marked complete' : 'Mark lesson complete'}
           </button>
-        </>
-      )}
+      </>
 
       <div className="grid-2" style={{ marginTop: 16 }}>
         <button className="btn btn-secondary" disabled={!prevTopic} onClick={() => goTo(prevTopic)}>‹ Previous</button>

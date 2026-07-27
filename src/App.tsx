@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import BottomNav from './components/BottomNav'
 import Dashboard from './pages/Dashboard'
@@ -54,6 +54,7 @@ export default function App() {
         <Route path="/settings" element={<Settings onThemeChange={applyTheme} />} />
         <Route path="/coverage" element={<Coverage />} />
         <Route path="/more" element={<More />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
       <BottomNav />
     </div>

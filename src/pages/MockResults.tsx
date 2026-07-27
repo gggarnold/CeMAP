@@ -13,13 +13,22 @@ export default function MockResults() {
   const navigate = useNavigate()
   const exam = mockExams.find(e => e.id === examId)
   const [attempt, setAttempt] = useState<MockAttempt | null>(null)
+  const [loaded, setLoaded] = useState(false)
   const [showReview, setShowReview] = useState(false)
 
   useEffect(() => {
-    if (attemptId) db.mockAttempts.get(Number(attemptId)).then(a => setAttempt(a ?? null))
+    if (attemptId) {
+      db.mockAttempts.get(Number(attemptId)).then(a => {
+        setAttempt(a ?? null)
+        setLoaded(true)
+      })
+    } else {
+      setLoaded(true)
+    }
   }, [attemptId])
 
-  if (!exam || !attempt) return <div className="page"><TopBar title="Results" back /><p>Loading…</p></div>
+  if (!loaded) return <div className="page"><TopBar title="Results" back /><p>Loading…</p></div>
+  if (!exam || !attempt) return <div className="page"><TopBar title="Results not found" back /></div>
 
   const questions = exam.questionIds.map(id => getQuestionById(id)).filter((q): q is NonNullable<typeof q> => !!q)
 

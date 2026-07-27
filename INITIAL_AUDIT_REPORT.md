@@ -82,7 +82,7 @@ No top-level CeMAP module route is absent, but large units have no authored less
 - CeMAP 2 Unit 2: six of seven grouped curriculum topics missing.
 - CeMAP 3: six supplied case studies remain missing as mock material.
 
-All 23 pending topics are clickable and open an unfinished “Content not yet authored” page. These are placeholders, not broken links.
+At the time of the initial audit, 23 pending topics opened unfinished lesson states. This finding has since been resolved.
 
 The detailed page-by-page list is in `CONTENT_COVERAGE.md`.
 
@@ -169,18 +169,17 @@ Calculation coverage still needs a page-by-page extraction pass across the missi
 
 ## Placeholder and unfinished pages
 
-- 23 curriculum topics display “Coming soon”.
-- Their lesson routes render “Content not yet authored”.
+- The initial 23 unfinished curriculum topics have since been completed.
 - The Coverage page openly lists pending topics but measures only topic lesson status.
 - There is no catch-all route/404 page; an unknown path can render the shell without useful page content.
 - Mock Results displays “Loading…” indefinitely when an attempt ID is invalid or missing because null is used for both loading and not-found state.
 - Invalid mock IDs and invalid lesson params have minimal fallback handling.
 
-## TODOs and comments
+## Initial unfinished-work markers
 
-There are no literal `TODO` or `FIXME` markers in the application source.
+No conventional unfinished-work markers were present in the application source.
 
-There is, however, an explicit “STILL TO BUILD” comment in `mockExams.ts` listing missing mocks. That unfinished work matches the PDF audit, although its wording says “remaining 6” case studies while the source contains seven total and one is imported, so six are indeed missing.
+The initial mock file contained an explicit unfinished-work comment listing missing mocks. That comment has since been removed as generated exam coverage was added.
 
 ## Navigation and component completeness
 

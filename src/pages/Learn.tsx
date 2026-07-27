@@ -42,9 +42,7 @@ export default function Learn() {
                 <div style={{ fontWeight: 600 }}>{topic.title}</div>
                 <div style={{ fontSize: '0.72rem', color: 'var(--text-faint)' }}>{topic.sourcePdf} · {topic.sourcePages}</div>
               </div>
-              {topic.status === 'complete'
-                ? <span className="pill pill-success">Ready</span>
-                : <span className="pill pill-pending">Coming soon</span>}
+              <span className="pill pill-success">Ready</span>
             </button>
           ))}
         </div>

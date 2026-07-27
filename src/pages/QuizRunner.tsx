@@ -170,6 +170,16 @@ export default function QuizRunner() {
         <div className="card">
           <strong>{isCorrectAnswer(current, selected) ? '✅ Correct' : '❌ Incorrect'}</strong>
           <p style={{ fontSize: '0.9rem' }}>{current.explanation}</p>
+          {current.incorrectExplanations && (
+            <div style={{ fontSize: '0.82rem', color: 'var(--text-dim)' }}>
+              {current.displayOptions.map((option, index) => (
+                <p key={index} style={{ margin: '6px 0' }}>
+                  <strong>{String.fromCharCode(65 + index)}. {option}</strong>{' — '}
+                  {current.incorrectExplanations?.[current.originalIndexOf[index]]}
+                </p>
+              ))}
+            </div>
+          )}
           <p style={{ fontSize: '0.72rem', color: 'var(--text-faint)' }}>
             Topic: {current.topicKey} · Source: {current.source} {current.origin === 'original' ? '(from a supplied paper)' : ''}
           </p>
