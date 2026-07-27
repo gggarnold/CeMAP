@@ -1,7 +1,7 @@
 # CeMAP Revision Content Coverage
 
 Audit date: 27 July 2026  
-Status: Development in progress; all CeMAP 1 instructional topics completed.
+Status: Development in progress; all curriculum lessons are now available.
 
 ## Coverage method
 
@@ -10,8 +10,8 @@ Percentages count useful instructional topics and supplied specimen/case-study p
 | Source PDF | Complete | Partial | Missing | Coverage |
 |---|---:|---:|---:|---:|
 | CeMAP 1 Delegate 2026 | 18 of 23 sections | 0 | 5 | 78.3% |
-| CeMAP 2-3 Delegate 2026 | 3 of 25 sections | 0 | 22 | 12.0% |
-| **Combined** | **21 of 48 sections** | **0** | **27** | **43.8%** |
+| CeMAP 2-3 Delegate 2026 | 19 of 25 sections | 0 | 6 | 76.0% |
+| **Combined** | **37 of 48 sections** | **0** | **11** | **77.1%** |
 
 These percentages measure section availability, not how many words were copied. Educational content must be rewritten into original revision wording.
 
@@ -57,26 +57,26 @@ The PDF contents page is internally inconsistent. For example, it lists Unit 2 T
 
 ### CeMAP 2 Unit 1 - Mortgage Law, Practice and Application
 
-- ❌ Topic 1: Property and mortgage markets (pp. 7-14)
-- ❌ Topics 2 and 3: Mortgage regulation and types of borrower (pp. 15-31)
-- ❌ Topic 4: Principles of mortgage and property law (pp. 32-41)
-- ❌ Topic 5: Property and mortgage law (pp. 42-50)
-- ❌ Topic 6: Buying a property overview (pp. 51-61)
-- ❌ Topics 7 and 8: Legal purchase process and regulation (pp. 62-77)
-- ❌ Topics 9 and 10: Adviser role and applicant financial assessment (pp. 78-91)
-- ❌ Topics 11 and 12: Credit status and suitability (pp. 92-104)
-- ❌ Topics 13 and 14: Property assessment, valuations and surveys (pp. 105-120)
-- ❌ Topic 15: Other lending-decision factors (pp. 121-134)
+- ✅ Topic 1: Property and mortgage markets (pp. 7-14)
+- ✅ Topics 2 and 3: Mortgage regulation and types of borrower (pp. 15-31)
+- ✅ Topic 4: Principles of mortgage and property law (pp. 32-41)
+- ✅ Topic 5: Property and mortgage law (pp. 42-50)
+- ✅ Topic 6: Buying a property overview (pp. 51-61)
+- ✅ Topics 7 and 8: Legal purchase process and regulation (pp. 62-77)
+- ✅ Topics 9 and 10: Adviser role and applicant financial assessment (pp. 78-91)
+- ✅ Topics 11 and 12: Credit status and suitability (pp. 92-104)
+- ✅ Topics 13 and 14: Property assessment, valuations and surveys (pp. 105-120)
+- ✅ Topic 15: Other lending-decision factors (pp. 121-134)
 
 ### CeMAP 2 Unit 2 - Mortgage Products and Post Completion
 
 - ✅ Topic 1: Mortgage repayment methods (pp. 135-144)
-- ❌ Topic 2: Interest-only repayment vehicles (pp. 145-158)
-- ❌ Topic 3: Interest-rate options (pp. 159-168)
-- ❌ Topics 4 and 5: Mortgage products and schemes (pp. 169-182)
-- ❌ Topic 6: Raising additional funds (pp. 183-196)
-- ❌ Topic 7: Transferring mortgages (pp. 197-208)
-- ❌ Topics 8 and 9: Arrears, lender rights and remedies (pp. 209-223)
+- ✅ Topic 2: Interest-only repayment vehicles (pp. 145-158)
+- ✅ Topic 3: Interest-rate options (pp. 159-168)
+- ✅ Topics 4 and 5: Mortgage products and schemes (pp. 169-182)
+- ✅ Topic 6: Raising additional funds (pp. 183-196)
+- ✅ Topic 7: Transferring mortgages (pp. 197-208)
+- ✅ Topics 8 and 9: Arrears, lender rights and remedies (pp. 209-223)
 
 ### CeMAP 3
 
@@ -96,15 +96,15 @@ The PDF contents page is internally inconsistent. For example, it lists Unit 2 T
 
 | Content type | Existing | Audit status |
 |---|---:|---|
-| Curriculum topics | 37 | 19 complete, 18 pending |
-| Lessons | 19 | All correspond to complete topics |
-| Flashcards | 128 | Only complete-topic coverage |
-| Glossary terms | 59 | Relationships incomplete |
+| Curriculum topics | 36 | 36 complete, 0 pending |
+| Lessons | 36 | Every curriculum topic has a lesson |
+| Flashcards | 179 | Every curriculum topic has flashcards |
+| Glossary terms | 110 | New CeMAP 2 terms include lesson relationships |
 | Calculation tools | 4 | More PDF calculations remain |
-| Topic/case questions | 249 | Only complete-topic coverage |
+| Topic/case questions | 368 | Every curriculum topic has practice questions |
 | Specimen-paper questions | 40 | Unit 1 Specimen A only |
-| Total questions | 289 | New Unit 2 questions include option explanations; legacy questions still need them |
-| Mock exam entries | 2 | Five CeMAP 1 papers and six CeMAP 3 cases missing |
+| Total questions | 408 | New questions include option explanations; legacy questions still need them |
+| Mock exam entries | 7 | Original supplied-paper imports remain incomplete |
 
 ## Completion gate
 

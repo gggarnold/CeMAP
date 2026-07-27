@@ -1,5 +1,6 @@
 import type { Flashcard } from './types'
 import { cemap1Unit2Flashcards } from './cemap1Unit2Remaining'
+import { cemap2RemainingFlashcards } from './cemap2Remaining'
 
 let n = 0
 function fc(module: 'cemap1'|'cemap2'|'cemap3', unitKey: string, topicKey: string, category: string, front: string, back: string, source: string): Flashcard {
@@ -144,4 +145,4 @@ const baseFlashcards: Flashcard[] = [
   fc('cemap1','unit2','t1','Adviser skills','Why should an adviser summarise during a meeting?', 'To demonstrate listening, check understanding and allow the customer to correct a misunderstanding.', 'CeMAP 1, Unit 2 Topic 1, p.157')
 ]
 
-export const flashcards: Flashcard[] = [...baseFlashcards, ...cemap1Unit2Flashcards]
+export const flashcards: Flashcard[] = [...baseFlashcards, ...cemap1Unit2Flashcards, ...cemap2RemainingFlashcards]

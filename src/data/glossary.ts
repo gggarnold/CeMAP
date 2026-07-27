@@ -1,5 +1,6 @@
 import type { GlossaryTerm } from './types'
 import { cemap1Unit2Glossary } from './cemap1Unit2Remaining'
+import { cemap2RemainingGlossary } from './cemap2Remaining'
 
 let n = 0
 function term(t: string, def: string, module: ('cemap1'|'cemap2'|'cemap3')[]): GlossaryTerm {
@@ -48,4 +49,4 @@ const baseGlossary: GlossaryTerm[] = [
   term('Appropriateness test', 'An assessment of whether a customer has enough knowledge and experience to understand the risks of specified complex non-advised investments.', ['cemap1'])
 ]
 
-export const glossary: GlossaryTerm[] = [...baseGlossary, ...cemap1Unit2Glossary]
+export const glossary: GlossaryTerm[] = [...baseGlossary, ...cemap1Unit2Glossary, ...cemap2RemainingGlossary]

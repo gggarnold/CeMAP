@@ -1,5 +1,6 @@
 import type { Lesson } from './types'
 import { cemap1Unit2Lessons } from './cemap1Unit2Remaining'
+import { cemap2RemainingLessons } from './cemap2Remaining'
 
 // All lessons below are original revision text written from the concepts in the supplied
 // PDFs — not copied passages. Each cites the source topic/page range it was derived from.
@@ -1250,4 +1251,4 @@ const baseLessons: Lesson[] = [
   }
 ]
 
-export const lessons: Lesson[] = [...baseLessons, ...cemap1Unit2Lessons]
+export const lessons: Lesson[] = [...baseLessons, ...cemap1Unit2Lessons, ...cemap2RemainingLessons]
