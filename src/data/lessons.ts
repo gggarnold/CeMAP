@@ -1134,5 +1134,117 @@ export const lessons: Lesson[] = [
       }
     ],
     source: 'CeMAP 1, Unit 1 Topic 8 Part 2, p.137-143'
+  },
+  // ---------------------------------------------------------------
+  {
+    id: 'c1-u2-t1',
+    module: 'cemap1', unitKey: 'unit2', topicKey: 't1',
+    title: 'Advice Process & Adviser Skills',
+    intro: 'Good advice is a documented sequence: explain the service, understand the customer, assess needs and risk, recommend a suitable solution, provide the required product information, and keep evidence of what happened. Adviser communication skills support every stage.',
+    sections: [
+      {
+        heading: 'Initial disclosure and client agreements',
+        bullets: [
+          'Before business begins, the customer should receive information about the firm, its service, regulatory status, communication arrangements, charges, complaints process and compensation arrangements.',
+          'Required information may be supplied on paper, as an email attachment or through another durable medium that lets the customer store and retrieve it. A website can be used only where the relevant conditions are met.',
+          'A written client agreement is used for designated investment business. It records the rights and responsibilities of both parties and explains charges, communications and conflicts of interest.',
+          'A client agreement is associated with direct, higher-risk investment activity and discretionary management. It is not normally required merely because a customer buys a packaged product or seeks an ordinary repayment mortgage.',
+          'Client-agreement records are retained for the relationship; records connected with pension transfers, opt-outs and FSAVCs are retained indefinitely.'
+        ]
+      },
+      {
+        heading: 'Fact-finding, risk and capacity for loss',
+        bullets: [
+          'The fact-find gathers hard facts such as income, spending, assets and liabilities, alongside softer facts such as priorities, hopes, preferences and willingness to act.',
+          'An adviser analyses current and future needs, whether the customer can afford to meet them and how important each need is.',
+          'Attitude to risk is the customer’s willingness to accept uncertainty or loss in pursuit of reward. Capacity for loss is different: it is the customer’s financial ability to withstand loss without an unacceptable effect on living standards.',
+          'Risk labels are only a starting point. A couple may have different attitudes, and the recommended risk must remain consistent with the objective, term, knowledge, experience and capacity for loss.',
+          'A gap analysis compares the customer’s objective with existing provision. It is particularly useful for quantifying protection shortfalls.'
+        ]
+      },
+      {
+        heading: 'Analysis, recommendation and informed decisions',
+        bullets: [
+          'After prioritising the customer’s needs, the adviser assesses affordability, tax position, existing arrangements, timescale, state provision and whether income, capital or both are required.',
+          'A recommendation should match the right amount and form of provision to the customer’s circumstances and timing.',
+          'The presentation should explain the purpose, relevant benefits, risks, limitations, costs and reasons for recommending the solution. Plain language and regular understanding checks help the customer make an informed decision.',
+          'If an adviser completes an application for the customer, the customer should check it before signing. Insurance application questions must be answered honestly and accurately; the customer is not expected to volunteer information that was not requested.',
+          'An insistent customer chooses to proceed against advice. The adviser should document the position clearly and obtain evidence that the customer understands they are departing from the recommendation.'
+        ]
+      },
+      {
+        heading: 'Product disclosure and suitability reports',
+        bullets: [
+          'Key product information and an illustration are normally provided before an application is made and the sale is completed.',
+          'Long-term insurance and pension information is commonly presented through key-features material. A Key Information Document applies to relevant packaged retail and insurance-based investment products and is designed to be short and understandable.',
+          'A suitability report explains the customer’s circumstances and objectives, the recommendation, why it is suitable and any disadvantages.',
+          'For the source material covered here: a life-policy suitability report is normally provided before conclusion; a pension report no later than 14 days after conclusion; and a unit trust, investment trust or OEIC report as soon as possible after execution.',
+          'Record-retention periods in the source distinguish indefinite pension-transfer/opt-out/FSAVC records, five years for specified life/pension and MiFID business, and three years for other products including mortgages. Treat these periods as regulation-sensitive and verify against the syllabus edition used for the exam.'
+        ]
+      },
+      {
+        heading: 'Execution-only business and appropriateness',
+        bullets: [
+          'In an execution-only transaction, the customer specifies the product and provider without receiving a recommendation. The customer is responsible for the decision.',
+          'The firm still supplies enough product information for an informed choice and should retain clear evidence that the transaction was execution-only.',
+          'Execution-only is not the same as an insistent-customer case: the latter follows advice that the customer decides not to follow.',
+          'For certain complex investments, the firm must assess whether the customer has enough knowledge and experience to understand the risks. This is an appropriateness test, not a full suitability assessment.'
+        ]
+      },
+      {
+        heading: 'Questioning, listening and communication',
+        bullets: [
+          'Closed questions obtain a fact or a short answer. They are efficient but can feel like an interrogation when overused.',
+          'Open questions encourage explanation. Probing questions explore an earlier answer, while hypothetical questions invite the customer to imagine a future situation.',
+          'Effective listening means concentrating on meaning, acknowledging what was heard and responding appropriately.',
+          'Summarising confirms understanding, gives the customer a chance to correct errors and creates a natural transition between subjects.',
+          'An adviser should avoid jargon, adapt spoken and written language to the customer, and notice non-verbal signals without treating body language as a substitute for clear evidence.'
+        ]
+      }
+    ],
+    workedExample: {
+      title: 'Separating willingness and ability to take risk',
+      body: [
+        'A customer says they enjoy taking investment risk, suggesting a high attitude-to-risk score.',
+        'Their emergency savings are small and a fall in capital would prevent them meeting essential spending.',
+        'Their capacity for loss is therefore low even though their stated willingness is high.',
+        'The recommendation must reflect the financial constraint; the attitude label alone cannot justify a high-risk solution.'
+      ]
+    },
+    examTraps: [
+      'Capacity for loss is financial resilience, not the customer’s feelings about risk.',
+      'Execution-only means no recommendation. An insistent customer has received advice but chooses a different course.',
+      'Appropriateness asks whether a customer can understand the risks of specified complex execution-only products; suitability asks whether a recommendation fits the customer.',
+      'The timing of suitability reports differs by product. Do not apply the pension deadline to life policies or collective investments.',
+      'Closed questions are useful for facts, but excessive use can frustrate the customer and damage rapport.'
+    ],
+    remember: [
+      'Disclose the service first; fact-find; analyse; recommend; disclose the product; document suitability; retain evidence.',
+      'Attitude to risk = willingness. Capacity for loss = ability to absorb loss.',
+      'Client agreement: designated investment business, rights and obligations, charges.',
+      'Execution-only: customer chooses the transaction and bears responsibility; complex products may still require an appropriateness assessment.'
+    ],
+    knowledgeCheck: [
+      {
+        question: 'Which description best captures capacity for loss?',
+        options: ['How adventurous the customer feels', 'How much loss the customer can withstand without harming their living standard', 'The largest fall a fund has experienced', 'The customer’s preferred investment term'],
+        correctIndex: 1,
+        explanation: 'Capacity for loss is an objective financial constraint: the effect a loss would have on the customer’s circumstances and standard of living.'
+      },
+      {
+        question: 'A customer rejects the adviser’s recommendation and asks to buy a different product. What type of case is this?',
+        options: ['Execution-only from the outset', 'An insistent customer', 'A discretionary-management agreement', 'A simplified-advice case'],
+        correctIndex: 1,
+        explanation: 'Advice has already been given, so this is an insistent-customer situation. The departure from advice should be clearly documented.'
+      },
+      {
+        question: 'Why does an adviser summarise during a fact-find?',
+        options: ['To shorten the regulatory retention period', 'To confirm understanding and allow correction', 'To turn an open question into execution-only business', 'To avoid recording soft facts'],
+        correctIndex: 1,
+        explanation: 'Summarising demonstrates listening and lets the customer correct a misunderstanding before the adviser relies on it.'
+      }
+    ],
+    source: 'CeMAP 1, Unit 2 Topic 1, p.149-157; topic test p.159-162',
+    dateSensitive: true
   }
 ]

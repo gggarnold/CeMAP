@@ -34,5 +34,15 @@ export const glossary: GlossaryTerm[] = [
   term('Deferred period', 'The waiting period before an income protection (or similar) policy starts paying out after a claim.', ['cemap3']),
   term('Whole of life assurance', 'Life cover that guarantees a payout whenever death occurs, however long that is.', ['cemap3']),
   term('Assignment (of a policy)', 'A legal transfer of ownership of a life policy to a lender as security for a loan.', ['cemap3']),
-  term('Deposit (of a policy)', 'Lodging a life policy document with a lender, giving them an equitable (not legal) right to the proceeds.', ['cemap3'])
+  term('Deposit (of a policy)', 'Lodging a life policy document with a lender, giving them an equitable (not legal) right to the proceeds.', ['cemap3']),
+  term('Durable medium', 'A medium that allows information addressed to a customer to be stored and retrieved unchanged for future reference.', ['cemap1']),
+  term('Client agreement', 'A written agreement for designated investment business that records the rights and obligations of the firm and client and explains charges.', ['cemap1']),
+  term('Fact-find', 'The structured collection of a customer’s hard facts, softer objectives, priorities and preferences before advice is formulated.', ['cemap1']),
+  term('Attitude to risk', 'A customer’s willingness to accept uncertainty or potential loss in pursuit of a return.', ['cemap1']),
+  term('Capacity for loss', 'A customer’s financial ability to withstand a loss without an unacceptable effect on living standards.', ['cemap1']),
+  term('Gap analysis', 'A comparison between a customer’s objective and the provision already in place, used to identify a shortfall.', ['cemap1']),
+  term('Suitability report', 'A report recording the customer’s circumstances and objectives, the recommendation, why it is suitable and any disadvantages.', ['cemap1']),
+  term('Execution-only transaction', 'A customer-directed transaction completed without a personal recommendation, leaving the customer responsible for the decision.', ['cemap1']),
+  term('Insistent customer', 'A customer who receives advice but chooses to proceed in a different way from the adviser’s recommendation.', ['cemap1']),
+  term('Appropriateness test', 'An assessment of whether a customer has enough knowledge and experience to understand the risks of specified complex non-advised investments.', ['cemap1'])
 ]

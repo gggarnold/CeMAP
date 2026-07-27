@@ -32,7 +32,7 @@ export const curriculum: Unit[] = [
     unitKey: 'unit2',
     title: 'Unit 2 — Advisers, Clients and Ethics (FRE2)',
     topics: [
-      { module: 'cemap1', unitKey: 'unit2', topicKey: 't1', title: 'Advice Process & Adviser Skills', status: 'pending', sourcePdf: 'CeMAP 1', sourcePages: 'p.144-157' },
+      { module: 'cemap1', unitKey: 'unit2', topicKey: 't1', title: 'Advice Process & Adviser Skills', status: 'complete', sourcePdf: 'CeMAP 1', sourcePages: 'p.149-162' },
       { module: 'cemap1', unitKey: 'unit2', topicKey: 't2a', title: 'Consumer Rights & Ethical Outcomes', status: 'pending', sourcePdf: 'CeMAP 1', sourcePages: 'p.158-165' },
       { module: 'cemap1', unitKey: 'unit2', topicKey: 't2b', title: 'Money Laundering, Data & Complaints', status: 'pending', sourcePdf: 'CeMAP 1', sourcePages: 'p.166-178' },
       { module: 'cemap1', unitKey: 'unit2', topicKey: 't3', title: 'Regulatory Advice Framework', status: 'pending', sourcePdf: 'CeMAP 1', sourcePages: 'p.179-191' },
