@@ -1,58 +1,26 @@
-import TopBar from '../components/TopBar'
-import { curriculum } from '../data/curriculum'
-import { mockExams } from '../data/mockExams'
-
-const moduleLabels: Record<string, string> = { cemap1: 'CeMAP 1', cemap2: 'CeMAP 2', cemap3: 'CeMAP 3' }
-
-export default function Coverage() {
-  const allTopics = curriculum.flatMap(u => u.topics)
-  const complete = allTopics.filter(t => t.status === 'complete')
-  const pending = allTopics.filter(t => t.status === 'pending')
-
-  return (
-    <div className="page">
-      <TopBar title="Content Coverage" back />
-      <p style={{ color: 'var(--text-dim)', fontSize: '0.85rem', marginTop: 12 }}>
-        {complete.length} of {allTopics.length} topics across CeMAP 1, 2 and 3 currently have full lessons, flashcards
-        and question banks authored and verified against your PDFs. Everything below is accurate as of this build —
-        nothing has been silently skipped.
-      </p>
-
-      <div className="section-title">✅ Fully authored ({complete.length})</div>
-      {complete.map(t => (
-        <div className="card" key={`${t.module}-${t.unitKey}-${t.topicKey}`} style={{ display: 'flex', justifyContent: 'space-between' }}>
-          <span>{moduleLabels[t.module]} · {t.title}</span>
-          <span className="pill pill-success">{t.sourcePages}</span>
-        </div>
-      ))}
-
-      <div className="section-title">⏳ Not yet authored ({pending.length})</div>
-      {pending.map(t => (
-        <div className="card" key={`${t.module}-${t.unitKey}-${t.topicKey}`} style={{ display: 'flex', justifyContent: 'space-between' }}>
-          <span>{moduleLabels[t.module]} · {t.title}</span>
-          <span className="pill pill-pending">{t.sourcePages}</span>
-        </div>
-      ))}
-
-      <div className="section-title">Mock exams</div>
-      <div className="card">
-        <p style={{ fontSize: '0.85rem', marginTop: 0 }}>
-          {mockExams.length} original supplied mock exam(s)/case stud{mockExams.length === 1 ? 'y' : 'ies'} are fully
-          built with verified answers: {mockExams.map(e => e.title).join(', ')}.
-        </p>
-        <p style={{ fontSize: '0.85rem', marginBottom: 0, color: 'var(--text-dim)' }}>
-          Your PDFs contain further specimen papers and case studies (e.g. CeMAP 1 Unit 1 Specimen Papers B & C,
-          Unit 2 Specimen Papers A-C, and CeMAP 3 Case Studies 2-7) that are not yet transcribed into the app.
-        </p>
-      </div>
-
-      <div className="section-title">Items flagged for your review</div>
-      <div className="card">
-        <ul style={{ fontSize: '0.85rem', paddingLeft: 18, marginTop: 0 }}>
-          <li>All tax/allowance figures (income tax bands, CGT annual exemption, IHT nil rate band) are principle-level only — verify exact current-year figures before your exam sitting.</li>
-          <li>Exam pass marks/timings were directly confirmed in your PDFs' introduction sections and should still be double-checked on libf.ac.uk in case LIBF has updated the exam format since your course materials were printed.</li>
-        </ul>
-      </div>
-    </div>
-  )
+{
+  "name": "cemap-revision-app",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "dexie": "^4.0.8",
+    "dexie-react-hooks": "^1.1.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.2",
+    "vite-plugin-pwa": "^0.20.5"
+  }
 }
